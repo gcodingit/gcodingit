@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../assets/img/LOGOfondoblanco.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GCodingIT / Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('BLPU9-Dtr8hq0NAmB')</script>
 </head>
+
 <body>
     <header>
-    <div class="container">
-        <div id="logo">
-            <a href="/index.html"><img src="/assets/img/LOGOblanco.png" alt="Gcodingit Logo"></a>
+        <div class="container">
+            <div id="logo">
+                <a href="/index.html"><img src="/assets/img/LOGOblanco.png" alt="Gcodingit Logo"></a>
+            </div>
+            <div id="titulo-logo">
+                <p>GCodingIT</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/servicios.html">Servicios</a></li>
+                    <li><a href="/pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="/pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="titulo-logo">
-            <p>GCodingIT</p>
-        </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="/pages/servicios.html">Servicios</a></li>
-          <li><a href="/pages/proyectos.html">Proyectos</a></li>
-          <li><a href="/pages/sobrenosotros.html">Sobre Nosotros</a></li>
-          <li><a href="/pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
     </header>
-    
-    <main>
 
+    <main>
+        <form id="form">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" id="buttonMessage" class="btn btn-enviar">Enviar</button>
+        </form>
     </main>
 
     <footer id="pie-de-pagina">
         <div class="contenedor-footer">
             <div class="logo-footer">
-            <img src="/assets/img/LOGOblanco.png" alt="Logo Gcodingit">
-            <p id="titulo-footer">GCodingIT</p>
+                <img src="/assets/img/LOGOblanco.png" alt="Logo Gcodingit">
+                <p id="titulo-footer">GCodingIT</p>
             </div>
 
             <div class="menu-footer">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/pages/servicios.html">Servicios</a></li>
-                <li><a href="/pages/proyectos.html">Proyectos</a></li>
-                <li><a href="/pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
-            </ul>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/servicios.html">Servicios</a></li>
+                    <li><a href="/pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="/pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
             </div>
 
             <div class="redes-sociales">
-            <p id="titulo-redes">Redes sociales</p>
-            <ul>
-                <li><a href="" title="Instagram">Instagram</a></li>
-                <li><a href="" title="LinkedIn">LinkedIn</a></li>
-                <li><a href="" title="GitHub">GitHub</a></li>
-            </ul>
-            
+                <p id="titulo-redes">Redes sociales</p>
+                <ul>
+                    <li><a href="" title="Instagram">Instagram</a></li>
+                    <li><a href="" title="LinkedIn">LinkedIn</a></li>
+                    <li><a href="" title="GitHub">GitHub</a></li>
+                </ul>
+
             </div>
         </div>
 
@@ -64,5 +85,11 @@
             <p>&copy; 2025 GCodingIT. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="../js/emailConfig.js"></script>
 </body>
+
 </html>

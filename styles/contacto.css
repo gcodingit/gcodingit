@@ -1,0 +1,21 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    background-color: rgba(125,125,125, 0.3);
+    width: 50%;
+    height: fit-content;
+    padding: 15px;
+    color: #a5c639;
+    border: 2px solid #a5c639;
+    border-radius: 10px;
+}
+
+.btn-enviar {
+    background-color: #a5c639;
+
+}
